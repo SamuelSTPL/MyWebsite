@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from "styled-components";
+import {
+  Switch,
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+} from "react-router-dom";
+
+import GlobalStyle from "./Global/reset";
+import { Welcome } from "./Pages/welcome";
+import { Homepage } from "./Pages/homepage";
+import { Projects } from "./Pages/projects";
+import { NavBar } from "./Components/navBar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Wrapper>
+        <GlobalStyle />
+        <Switch>
+          <Route path="/homepage" component={Homepage} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/" component={Welcome} />
+        </Switch>
+      </Wrapper>
+    </Router>
   );
 }
+
+const Wrapper = styled.div`
+  width: 100%;
+  height: 100vh;
+`;
 
 export default App;
