@@ -1,23 +1,24 @@
 import React from "react";
 import styled from "styled-components";
 
-import { Colors } from "../Global/Color";
 import GitHub from "../images/github.png";
 import Linkedin from "../images/linkedin.png";
-
-// const slideUp = keyframes`
-//   100% {top: 5%}
-//   `;
+import { slideUp } from "../Global/keyframesAnimation";
 
 export const LinkBar = () => {
   return (
     <Wrapper>
-      <a href="https://github.com/SamuelSTPL" target="_blank">
+      <a
+        href="https://github.com/SamuelSTPL"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <ImgGit src={GitHub} />
       </a>
       <a
         href="https://www.linkedin.com/in/samuel-st-pierre-larivi%C3%A8re/"
         target="_blank"
+        rel="noopener noreferrer"
       >
         <ImgLin src={Linkedin} />
       </a>
@@ -27,13 +28,15 @@ export const LinkBar = () => {
 
 const Wrapper = styled.div`
   position: absolute;
-  bottom: 5%;
+  bottom: -5%;
   left: 50%;
   transform: translate(-50%, 0%);
   width: 200px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  animation: ${slideUp} 0.5s forwards;
+  animation-delay: 3s;
 `;
 
 const ImgGit = styled.img`

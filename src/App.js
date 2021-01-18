@@ -1,16 +1,10 @@
 import styled from "styled-components";
-import {
-  Switch,
-  BrowserRouter as Router,
-  Route,
-  Redirect,
-} from "react-router-dom";
+import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
 
 import GlobalStyle from "./Global/reset";
 import { Welcome } from "./Pages/welcome";
 import { Homepage } from "./Pages/homepage";
 import { Projects } from "./Pages/projects";
-import { NavBar } from "./Components/navBar";
 
 function App() {
   return (

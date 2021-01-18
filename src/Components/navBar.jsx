@@ -1,13 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { keyframes } from "styled-components";
 import styled from "styled-components";
 
 import { Colors } from "../Global/Color";
-
-const slideDown = keyframes`
-  100% {top: 5%}
-  `;
+import { slideDown } from "../Global/keyframesAnimation";
 
 export const NavBar = () => {
   return (
@@ -28,7 +24,6 @@ export const NavBar = () => {
 const Wrapper = styled.ul`
   position: absolute;
   top: -5%;
-  /* top: 5%; */
   right: 3%;
   list-style: none;
   display: flex;
