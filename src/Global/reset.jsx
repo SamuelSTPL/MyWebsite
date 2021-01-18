@@ -28,6 +28,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family: "Indie Flower", cursive;
+	
 }
 ol, ul {
 	list-style: none;

@@ -5,6 +5,7 @@ import GlobalStyle from "./Global/reset";
 import { Welcome } from "./Pages/welcome";
 import { Homepage } from "./Pages/homepage";
 import { Projects } from "./Pages/projects";
+import { Skillset } from "./Pages/skillset";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Switch>
           <Route path="/homepage" component={Homepage} />
           <Route path="/projects" component={Projects} />
+          <Route path="/skillset" component={Skillset} />
           <Route path="/" component={Welcome} />
         </Switch>
       </Wrapper>

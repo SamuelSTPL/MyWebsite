@@ -28,15 +28,13 @@ export const LinkBar = () => {
 
 const Wrapper = styled.div`
   position: absolute;
-  bottom: -5%;
+  bottom: 5%;
   left: 50%;
   transform: translate(-50%, 0%);
   width: 200px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  animation: ${slideUp} 0.5s forwards;
-  animation-delay: 3s;
 `;
 
 const ImgGit = styled.img`
