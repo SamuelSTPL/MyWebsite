@@ -17,29 +17,29 @@ export const Resume = () => {
       <LinkBar />
       <BackgroundWaves />
       <Text>
-        "The technological universe fascinates me by the rigour it requires, but
-        also by its multiple possibilities to solve problems. Becoming a Web
+        " The technological universe fascinates me by the rigour it requires,
+        but also by its multiple possibilities to solve problems. Becoming a Web
         developer was for me an aspiration to be professionally happy. I am a
         person who is curious, hard-working and persevering. I handle logistics
         and creativity very well. I used to work in the restaurant industry as a
-        restaurant manager, which got me used to working under pressure."
+        restaurant manager, which got me used to work under pressure."
       </Text>
       <Text1>
-        "I started learning Web development on my own by watching several videos
-        produced by Web developers, among others. I then took the CS 50 online
-        course at Harvard University. This course allowed me to confirm my
-        desire to work in the technology field, but also to practise my
-        knowledge of computer sciences such as data structures, and how
-        computers function under the hood. I then decided to officially register
-        for a course offered in Quebec by enrolling in the Bootcamp (also known
-        as DECODE) at Concordia University. Since the fall of 2020, I have
-        learned immensely in Web Development and I can now say that I can create
-        entire web applications front to back and I am very proud of it."
+        " I started learning Web development independently by watching several
+        videos produced by Web developers, among others. I then took the CS 50
+        online course at Harvard University. This course confirmed my desire to
+        work in the technology field and inspired me to expand my knowledge of
+        computer sciences, such as data structures and how computers function
+        under the hood. I then decided to officially register for a Full-Stack
+        Web Development Bootcamp in Quebec (also known as DECODE) at Concordia
+        University. Since the fall of 2020, I have learned immensely in Web
+        Development, and I can now say that I can create entire web applications
+        front to back, and I am very proud of it. "
       </Text1>
       <Text2>
-        "I know that this is a field where I will be able to continually learn
-        and improve my knowledge and that is what drives me: learning, creating
-        and solving problems with multiple solutions."
+        " I know that this is a field where I can continuously learn and develop
+        my skills. That is what drives me: learning, creating, and solving
+        problems with multiple solutions. "
       </Text2>
       <ResumePDF href={pdf} target="_blank">
         Open my Resume{" "}
@@ -78,6 +78,10 @@ const ResumePDF = styled.a`
   font-weight: bold;
   border-radius: 10px;
   box-shadow: 5px 5px 15px 2px #70767c;
+
+  &:hover {
+    background-color: ${Colors.hoverBlue};
+  }
 `;
 
 const Text = styled.p`
@@ -89,6 +93,7 @@ const Text = styled.p`
   top: 18%;
   left: 50%;
   transform: translate(-50%, -50%);
+  line-height: 1.1;
 `;
 
 const Text1 = styled(Text)`
