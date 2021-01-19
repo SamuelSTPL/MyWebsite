@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 import GitHub from "../images/github.png";
 import Linkedin from "../images/linkedin.png";
-import { slideUp } from "../Global/keyframesAnimation";
 
 export const LinkBar = () => {
   return (
