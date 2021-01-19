@@ -4,6 +4,7 @@ import { BsCheckCircle } from "react-icons/bs";
 
 import { Colors } from "../Global/Color";
 import { NavBar } from "../Components/navBar";
+import { Logo } from "../Components/logo";
 import { LinkBar } from "../Components/linkBar";
 import { Globe } from "../Components/globe";
 import ezCooking from "../images/EzCooking.png";
@@ -14,6 +15,7 @@ export const Projects = () => {
     <Wrapper>
       <Globe />
       <NavBar />
+      <Logo />
       <MainContainer>
         <Title>Some projects that I have completed recently</Title>
         <ProjectsContainer>
@@ -92,7 +94,6 @@ export const Projects = () => {
   );
 };
 const Wrapper = styled.div`
-  box-sizing: border-box;
   padding-top: 100px;
   width: 100%;
   height: 100%;

@@ -37,7 +37,7 @@ const Li = styled.div`
   position: relative;
   padding: 10px;
   width: 150px;
-  height: 40px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;

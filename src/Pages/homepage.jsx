@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { Colors } from "../Global/Color";
 import { NavBar } from "../Components/navBar";
 import { LinkBar } from "../Components/linkBar";
+import { Logo } from "../Components/logo";
 import profileImg from "../images/LinkedProfile.jpg";
 import backgroundImg from "../images/world.png";
 
@@ -12,6 +13,7 @@ export const Homepage = () => {
     <Wrapper>
       <NavBar />
       <LinkBar />
+      <Logo />
       <BackgroundImgContainer>
         <BackgroundImg src={backgroundImg} />
       </BackgroundImgContainer>
