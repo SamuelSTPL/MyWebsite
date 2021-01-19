@@ -60,7 +60,7 @@ export const Projects = () => {
           </Project>
           <Project>
             <ProjectTitle
-              href="https://ez-cooking.netlify.app/"
+              href="https://samuelstpl.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
             >

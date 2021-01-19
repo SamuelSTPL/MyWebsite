@@ -18,7 +18,7 @@ export const EnterBox = () => {
       <ContentBox>
         <Text>My name is Samuel,</Text>
         <Text>I am a Full-Stack Web Dev</Text>
-        <Text>Welcome to my website</Text>
+        <Text>Welcome to my website!</Text>
         <EnterButton onClick={() => enterWebSite()}>
           <ButtonContent>
             <ButtonText>Come in</ButtonText>
@@ -36,7 +36,7 @@ const Overlay1 = styled.div`
   border-radius: 70px;
   z-index: 3;
   position: absolute;
-  width: 40%;
+  width: 30%;
   height: 35%;
   left: 50%;
   top: 50%;
@@ -68,11 +68,11 @@ const Text = styled.p`
 const EnterButton = styled.button`
   background-color: whitesmoke;
   border-radius: 20px;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-family: "Indie Flower", cursive;
   color: ${Colors.blue};
   border: none;
-  width: 270px;
+  width: 220px;
   height: 60px;
   border: 5px solid ${Colors.blue};
   &:hover {
