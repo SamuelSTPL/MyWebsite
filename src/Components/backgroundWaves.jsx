@@ -39,7 +39,7 @@ const InnerWrapper = styled.div`
   bottom: -1px;
   background: linear-gradient(
     180deg,
-    rgba(223, 233, 243, 1) 60%,
+    rgba(223, 233, 243, 1) 80%,
     rgba(141, 164, 206, 1) 100%
   );
 `;

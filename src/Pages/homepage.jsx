@@ -21,7 +21,7 @@ export const Homepage = () => {
         <ProfileImg src={profileImg} />
         <TextContainer>
           <Overlay />
-          <Title>Connecting the world, a cup of coffee at a time</Title>
+          <Title>" Connecting the world, a cup of coffee at a time "</Title>
         </TextContainer>
       </MainContentContainer>
     </Wrapper>
@@ -88,4 +88,5 @@ const Title = styled.p`
   color: ${Colors.blue};
   text-shadow: 4px 3px 2px ${Colors.hoverBlue};
   font-family: "Indie Flower", cursive;
+  line-height: 1.4;
 `;

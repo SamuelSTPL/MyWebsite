@@ -38,7 +38,7 @@ const Wrapper = styled.div`
 `;
 
 const ImgGit = styled.img`
-  width: 40px;
+  width: 35px;
   transition: transform 0.8s ease-in-out;
 
   &:hover {
@@ -47,6 +47,6 @@ const ImgGit = styled.img`
 `;
 
 const ImgLin = styled(ImgGit)`
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
 `;

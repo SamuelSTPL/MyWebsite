@@ -94,7 +94,7 @@ export const Projects = () => {
   );
 };
 const Wrapper = styled.div`
-  padding-top: 100px;
+  padding-top: 80px;
   width: 100%;
   height: 100%;
   background-color: ${Colors.background};
@@ -125,7 +125,7 @@ const ProjectsContainer = styled.div`
 
 const Project = styled.div`
   background-color: whitesmoke;
-  height: 63vh;
+  height: 65vh;
   width: 400px;
   display: flex;
   flex-direction: column;
