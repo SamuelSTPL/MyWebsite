@@ -14,6 +14,7 @@ export const Logo = () => {
 };
 
 const Wrapper = styled.button`
+  z-index: 20;
   position: absolute;
   top: 0.5%;
   left: 5%;

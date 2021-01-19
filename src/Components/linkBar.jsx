@@ -27,6 +27,7 @@ export const LinkBar = () => {
 };
 
 const Wrapper = styled.div`
+  z-index: 20;
   position: absolute;
   bottom: 5%;
   left: 50%;

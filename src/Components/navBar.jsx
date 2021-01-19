@@ -17,11 +17,15 @@ export const NavBar = () => {
       <Li>
         <Link to="/skillset">Skillset</Link>
       </Li>
+      <Li>
+        <Link to="/resume">Resume</Link>
+      </Li>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.ul`
+  z-index: 20;
   position: absolute;
   top: -5%;
   right: 3%;
