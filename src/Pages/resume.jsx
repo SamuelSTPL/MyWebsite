@@ -60,8 +60,8 @@ const Wrapper = styled.div`
 const ResumePDF = styled.a`
   color: black;
   z-index: 20;
-  width: 300px;
-  height: 60px;
+  width: 20.5vw;
+  height: 6.5vh;
   position: absolute;
   top: 75%;
   left: 50%;
@@ -70,7 +70,7 @@ const ResumePDF = styled.a`
   text-decoration: none;
   text-align: center;
   border: 3px solid ${Colors.blue};
-  font-size: 2rem;
+  font-size: 2vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,18 +82,27 @@ const ResumePDF = styled.a`
   &:hover {
     background-color: ${Colors.hoverBlue};
   }
+  @media (min-width: 1250px) {
+    width: 18vw;
+    height: 6.5vh;
+    font-size: 1.5vw;
+  }
 `;
 
 const Text = styled.p`
   text-align: center;
   width: 90%;
   z-index: 21;
-  font-size: 2.2rem;
+  font-size: 2vw;
   position: absolute;
   top: 18%;
   left: 50%;
   transform: translate(-50%, -50%);
   line-height: 1.1;
+
+  @media (min-width: 1250px) {
+    font-size: 1.5vw;
+  }
 `;
 
 const Text1 = styled(Text)`
@@ -106,4 +115,12 @@ const Text2 = styled(Text)`
 const IconSpan = styled.span`
   margin: 8px 0 0 4px;
   font-size: 2.5rem;
+
+  @media (max-width: 800px) {
+    font-size: 1.5rem;
+  }
+  @media (max-width: 500px) {
+    margin: 4px 0 0 4px;
+    font-size: 1.2rem;
+  }
 `;
