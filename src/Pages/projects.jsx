@@ -67,28 +67,27 @@ export const Projects = () => {
               Portfolio
             </ProjectTitle>
             <ProjectImg src={portfolio} />
-            <ProjectSubTitle>Technologies</ProjectSubTitle>
+            <ProjectSubtitleSmall>Technologies</ProjectSubtitleSmall>
             <Ul>
               <Li>React</Li>
               <Li>CSS</Li>
               <Li>KeyFrames</Li>
               <Li>Styled-components</Li>
             </Ul>
-            <ProjectSubTitle>Challenges</ProjectSubTitle>
+            <ProjectSubtitleSmall>Challenges</ProjectSubtitleSmall>
             <ul>
               <Challenge2>
                 <BsCheckCircle />
                 Create many customs animations
               </Challenge2>
             </ul>
-            <ProjectSubTitle>Deployed on:</ProjectSubTitle>
+            <ProjectSubtitleSmall>Deployed on:</ProjectSubtitleSmall>
             <Ul>
               <Li>Netlify</Li>
             </Ul>
           </Project>
         </ProjectsContainer>
       </MainContainer>
-      <Citation>And many more to come !</Citation>
       <LinkBar />
     </Wrapper>
   );
@@ -96,18 +95,19 @@ export const Projects = () => {
 const Wrapper = styled.div`
   padding-top: 80px;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   background-color: ${Colors.background};
 `;
 
 const MainContainer = styled.div`
   width: 80%;
   margin: auto;
+  height: 100%;
 `;
 
 const Title = styled.p`
-  margin: 30px 0 30px 0;
-  font-size: 3rem;
+  margin: -0.3vw 0 30px 1.2vw;
+  font-size: 2vw;
   font-weight: bold;
   color: ${Colors.blue};
   text-shadow: 4px 3px 2px ${Colors.hoverBlue};
@@ -125,35 +125,41 @@ const ProjectsContainer = styled.div`
 
 const Project = styled.div`
   background-color: whitesmoke;
-  height: 65vh;
-  width: 400px;
+  height: 100%;
+  min-height: 590px;
+  width: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 90px;
+  margin-right: 2vw;
+  margin-top: 2vw;
   border: 2px solid ${Colors.blue};
   border-radius: 30px;
   box-shadow: 5px 5px 15px 5px #a3abb3;
 `;
 
 const ProjectTitle = styled.a`
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: ${Colors.blue};
   text-decoration: underline;
-  margin: 5px 0 15px 0;
+  margin: 5px 0 10px 0;
 `;
 
 const ProjectImg = styled.img`
   border: 1px solid ${Colors.blue};
-  width: 385px;
+  width: 95%;
   border-radius: 20px;
 `;
 
 const ProjectSubTitle = styled.p`
   text-decoration: underline;
   margin: 5px 0 10px 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: ${Colors.blue};
+`;
+
+const ProjectSubtitleSmall = styled(ProjectSubTitle)`
+  margin: 15px 0 10px 0;
 `;
 
 const Ul = styled.ul`
@@ -166,25 +172,16 @@ const Ul = styled.ul`
 const Li = styled.li`
   text-decoration: none !important;
   margin: 0 20px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: ${Colors.blue};
 `;
 
 const Challenge = styled(Li)`
+  margin: 5px auto;
   width: 90%;
-  margin: auto;
 `;
 
 const Challenge2 = styled(Li)`
-  width: 100%;
-  margin: auto;
-`;
-
-const Citation = styled.p`
-  position: absolute;
-  top: 70%;
-  right: 8%;
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: ${Colors.blue};
+  margin: 8px auto;
+  width: 90%;
 `;

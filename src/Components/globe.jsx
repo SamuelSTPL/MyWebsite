@@ -9,13 +9,14 @@ export const Globe = () => {
   return (
     <Wrapper>
       <Earth />
+      <Citation>And many more to come !</Citation>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.div`
   position: absolute;
-  top: 30%;
+  top: 20%;
   right: 10%;
   background-color: ${Colors.blue};
   border-radius: 50%;
@@ -23,11 +24,20 @@ const Wrapper = styled.div`
 `;
 
 const Earth = styled.div`
-  width: 350px;
-  height: 350px;
+  width: 25vw;
+  height: 25vw;
   border-radius: 50%;
   box-shadow: inset 0 0 40px rgba(255, 255, 255, 0.5);
   background: url(${earth});
   background-size: cover;
   animation: ${animeEarth} 60s linear infinite;
+`;
+
+const Citation = styled.p`
+  position: absolute;
+  top: 105%;
+  font-size: 2.2vw;
+  font-weight: bold;
+  color: ${Colors.blue};
+  width: 100%;
 `;
