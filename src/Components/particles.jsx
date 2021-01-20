@@ -6,6 +6,8 @@ export const Particle = () => {
   return (
     <Wrapper>
       <Particles
+        width={"100%"}
+        height={"100vh"}
         params={{
           particles: {
             number: {
@@ -84,6 +86,9 @@ export const Particle = () => {
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 100%;
+  max-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: whitesmoke;
 `;

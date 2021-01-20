@@ -13,4 +13,6 @@ export const Welcome = () => {
   );
 };
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  min-height: 100%;
+`;

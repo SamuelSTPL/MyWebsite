@@ -43,6 +43,11 @@ const Overlay1 = styled.div`
   transform: translate(-50%, -50%);
   background-color: whitesmoke;
   opacity: 0.6;
+
+  @media (max-width: 800px) {
+  }
+  @media (max-width: 500px) {
+  }
 `;
 
 const ContentBox = styled.div`
@@ -57,21 +62,27 @@ const ContentBox = styled.div`
 `;
 
 const Text = styled.p`
-  font-size: 3rem;
+  font-size: 2.2rem;
+  font-size: 2.2rem;
   font-weight: bold;
   color: ${Colors.blue};
   text-shadow: 4px 3px 2px ${Colors.hoverBlue};
   font-family: "Indie Flower", cursive;
   margin-bottom: 35px;
+  @media (max-width: 800px) {
+    font-size: 1.4rem;
+  }
+  @media (max-width: 500px) {
+    font-size: 1.1rem;
+  }
 `;
 
 const EnterButton = styled.button`
   background-color: whitesmoke;
   border-radius: 20px;
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-family: "Indie Flower", cursive;
   color: ${Colors.blue};
-  border: none;
   width: 220px;
   height: 60px;
   border: 5px solid ${Colors.blue};
@@ -82,6 +93,19 @@ const EnterButton = styled.button`
   &:focus {
     outline: none;
     background: ${Colors.hoverBlue};
+  }
+
+  @media (max-width: 800px) {
+    font-size: 1.4rem;
+    width: 180px;
+    height: 40px;
+    border: 4px solid ${Colors.blue};
+  }
+  @media (max-width: 500px) {
+    width: 150px;
+    border: 3px solid ${Colors.blue};
+    height: 40px;
+    font-size: 1.2rem;
   }
 `;
 
