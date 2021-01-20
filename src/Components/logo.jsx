@@ -17,10 +17,10 @@ const Wrapper = styled.button`
   z-index: 20;
   position: absolute;
   top: 0.5%;
-  left: 5%;
+  left: 4%;
   background: transparent;
   border: none;
-
+  transform: translate(-50%, -50%)
   &:hover {
     cursor: pointer;
   }
@@ -31,5 +31,5 @@ const Wrapper = styled.button`
 `;
 
 const Img = styled.img`
-  width: 250px;
+  width: 14vw;
 `;

@@ -29,46 +29,67 @@ export const Homepage = () => {
 };
 
 const Wrapper = styled.div`
-  box-sizing: border-box;
   background-color: ${Colors.background};
-  height: 100vh;
+  /* height: 100vh; */
   padding-top: 15px;
+  max-width: 100%;
 `;
 
 const BackgroundImgContainer = styled.div`
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
 `;
 
 const BackgroundImg = styled.img`
-  /* margin: auto; */
   width: 90%;
-  height: 95vh;
+  height: auto;
 `;
 
 const MainContentContainer = styled.div`
+  width: 60%;
+  height: 30%;
   position: absolute;
   top: 43%;
-  left: 50%;
+  left: 55%;
   transform: translate(-50%, -50%);
   display: flex;
 `;
 
 const ProfileImg = styled.img`
-  width: 300px;
+  max-width: 250px;
+  max-height: 200px;
   border: 5px solid ${Colors.blue};
   border-radius: 50%;
+  align-self: center;
+
+  @media (max-width: 1200px) {
+    max-width: 200px;
+    max-height: 150px;
+  }
+  @media (max-width: 800px) {
+    max-width: 150px;
+    max-height: 100px;
+  }
+  /* @media (max-width: 500px) {
+    max-width: 300px;
+    max-height: 300px;
+  } */
 `;
 
 const TextContainer = styled.div`
   position: relative;
-  width: 700px;
+  max-width: 700px;
+  max-height: 250px;
   display: flex;
   text-align: center;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
+  @media (max-width: 800px) {
+  }
+  @media (max-width: 500px) {
+  }
 `;
 
 const Overlay = styled.div`
@@ -83,10 +104,19 @@ const Overlay = styled.div`
 
 const Title = styled.p`
   z-index: 2;
-  font-size: 4rem;
+  font-size: 3.4vw;
   font-weight: bold;
   color: ${Colors.blue};
   text-shadow: 4px 3px 2px ${Colors.hoverBlue};
   font-family: "Indie Flower", cursive;
   line-height: 1.4;
+  /* @media (max-width: 1024px) {
+    font-size: 3rem;
+  }
+  @media (max-width: 800px) {
+    font-size: 2.5rem;
+  }
+  @media (max-width: 500px) {
+    font-size: 2rem;
+  } */
 `;

@@ -37,11 +37,11 @@ const Wrapper = styled.ul`
 `;
 
 const Li = styled.div`
-  margin-right: 30px;
+  margin-right: 3vw;
   position: relative;
   padding: 10px;
-  width: 150px;
-  height: 50px;
+  width: 8vw;
+  height: 3vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,7 +88,7 @@ const Link = styled(NavLink)`
   position: relative;
   z-index: 2;
   font-weight: bolder;
-  font-size: 2.2rem;
+  font-size: 1.7vw;
   text-decoration: none;
   color: ${Colors.blue};
   font-family: "Indie Flower", cursive;

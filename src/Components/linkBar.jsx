@@ -31,14 +31,14 @@ const Wrapper = styled.div`
   bottom: 5%;
   left: 50%;
   transform: translate(-50%, 0%);
-  width: 200px;
+  width: 15%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 `;
 
 const ImgGit = styled.img`
-  width: 35px;
+  width: 2vw;
   transition: transform 0.8s ease-in-out;
 
   &:hover {
@@ -47,6 +47,5 @@ const ImgGit = styled.img`
 `;
 
 const ImgLin = styled(ImgGit)`
-  width: 30px;
-  height: 30px;
+  width: 1.8vw;
 `;
