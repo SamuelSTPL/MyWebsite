@@ -46,12 +46,19 @@ const Wrapper = styled.div`
     min-height: 150px;
   }
   @media (max-width: 500px) {
-    min-height: 150px;
+    width: 170px;
+    height: 60px;
+    right: 7%;
+    top: 80%;
+    min-height: 100px;
   }
 `;
 
 const Anchor = styled.a`
   margin-top: 1vw;
+  @media (max-width: 500px) {
+    margin-top: 5px;
+  }
 `;
 
 const Text = styled.p`
@@ -63,6 +70,10 @@ const Text = styled.p`
   @media (max-width: 800px) {
   }
   @media (max-width: 500px) {
+    font-size: 1rem;
+    margin-left: 1px;
+    margin-top: 7px;
+    font-weight: bold;
   }
 `;
 

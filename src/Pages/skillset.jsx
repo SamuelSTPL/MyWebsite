@@ -103,6 +103,7 @@ const Wrapper = styled.div`
     padding-top: 100px;
   }
   @media (max-width: 500px) {
+    padding-top: 70px;
   }
 `;
 const SkillsWrapper = styled.div`
@@ -120,6 +121,9 @@ const SkillsWrapper = styled.div`
     height: 700px;
   }
   @media (max-width: 500px) {
+    width: 95%;
+    margin-left: 0;
+    margin: auto;
   }
 `;
 
@@ -153,6 +157,7 @@ const SkillBars = styled.div`
     height: 18px;
   }
   @media (max-width: 500px) {
+    height: 15px;
   }
 `;
 
@@ -169,6 +174,8 @@ const SubTitle = styled.p`
     font-size: 1.5rem;
   }
   @media (max-width: 500px) {
+    font-size: 1.4rem;
+    margin: 10px 0 -10px 0;
   }
 `;
 
@@ -184,5 +191,6 @@ const SkillName = styled.p`
     font-size: 1.4rem;
   }
   @media (max-width: 500px) {
+    font-size: 1rem;
   }
 `;

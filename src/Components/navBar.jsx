@@ -35,7 +35,7 @@ const Wrapper = styled.ul`
   animation: ${slideDown} 0.5s forwards;
   animation-delay: 2s;
   @media (max-width: 500px) {
-    left: 45%;
+    left: 44%;
     transform: translate(-50%, -50%);
   }
 `;
@@ -51,7 +51,8 @@ const Li = styled.div`
   align-items: center;
 
   @media (max-width: 500px) {
-    width: 65px;
+    margin-right: 13px;
+    width: 70px;
     height: 30px;
   }
 

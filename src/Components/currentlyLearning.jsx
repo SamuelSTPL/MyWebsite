@@ -36,7 +36,11 @@ const Wrapper = styled.div`
     min-height: 150px;
   }
   @media (max-width: 500px) {
-    min-height: 150px;
+    width: 170px;
+    height: 60px;
+    right: 50%;
+    top: 80%;
+    min-height: 100px;
   }
 `;
 
@@ -50,6 +54,9 @@ const Title = styled.p`
   @media (max-width: 800px) {
   }
   @media (max-width: 500px) {
+    margin: 25px 0 0 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
   }
 `;
 
@@ -62,10 +69,13 @@ const TechnologyName = styled.p`
   @media (max-width: 1440px) {
     font-size: 2rem;
     margin-left: 30%;
-    margin-top: 0px;
+    margin-top: 1.5px;
   }
   @media (max-width: 800px) {
   }
   @media (max-width: 500px) {
+    font-size: 1rem;
+    margin-left: 15px;
+    margin-top: 10px;
   }
 `;
