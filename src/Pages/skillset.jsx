@@ -4,7 +4,6 @@ import styled from "styled-components";
 import { Colors } from "../Global/Color";
 import { Logo } from "../Components/logo";
 import { NavBar } from "../Components/navBar";
-import { LinkBar } from "../Components/linkBar";
 import { CurrentlyLearning } from "../Components/currentlyLearning";
 import waves from "../images/waves.png";
 import sand from "../images/sand.jpg";
@@ -15,7 +14,7 @@ export const Skillset = () => {
   return (
     <Wrapper>
       <NavBar />
-      <LinkBar />
+      {/* <LinkBar /> */}
       <Logo />
       <Codewars />
       <CurrentlyLearning />
@@ -95,23 +94,39 @@ export const Skillset = () => {
 };
 
 const Wrapper = styled.div`
-  padding-top: 120px;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: ${Colors.background};
+  @media (min-width: 1300px) {
+    padding-top: 150px;
+  }
+  @media (max-height: 850px) {
+    padding-top: 100px;
+  }
+  @media (max-width: 500px) {
+  }
 `;
 const SkillsWrapper = styled.div`
   width: 50%;
+  /* max-height: 60vw; */
   margin-left: 12%;
   border: 3px solid ${Colors.blue};
   background-color: whitesmoke;
   border-radius: 50px;
   box-shadow: 5px 5px 15px 5px #a3abb3;
   padding: 0 20px 30px 20px;
+  @media (min-width: 1300px) {
+  }
+  @media (max-heigth: 850px) {
+    height: 700px;
+  }
+  @media (max-width: 500px) {
+  }
 `;
 
 const SkillsContainer = styled.div`
   width: 100%;
+  max-height: 100%;
   margin: 3px;
 `;
 
@@ -124,13 +139,21 @@ const SkillBarBackground = styled.div`
 
 const SkillBars = styled.div`
   width: ${(props) => props.width};
-  height: 23px;
+  height: 1vw;
   background-image: url(${waves});
   background-size: cover;
   border-radius: 0 20px 20px 0;
 
   &:hover {
     animation: ${crashingWaves} 10s linear infinite;
+  }
+  @media (min-width: 1300px) {
+    height: 35px;
+  }
+  @media (max-height: 850px) {
+    height: 18px;
+  }
+  @media (max-width: 500px) {
   }
 `;
 
@@ -140,6 +163,14 @@ const SubTitle = styled.p`
   margin: 10px 0 -10px 0;
   text-align: center;
   font-weight: bolder;
+  @media (min-width: 1300px) {
+    font-size: 2.5rem;
+  }
+  @media (max-height: 850px) {
+    font-size: 1.5rem;
+  }
+  @media (max-width: 500px) {
+  }
 `;
 
 const SkillName = styled.p`
@@ -147,4 +178,12 @@ const SkillName = styled.p`
   font-size: 1.4rem;
   margin: 5px 0;
   font-weight: bold;
+  @media (min-width: 1300px) {
+    font-size: 1.7rem;
+  }
+  @media (max-height: 850px) {
+    font-size: 1.4rem;
+  }
+  @media (max-width: 500px) {
+  }
 `;

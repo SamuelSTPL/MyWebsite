@@ -19,9 +19,20 @@ export const GrowingPlant = () => {
 
 const Wrapper = styled.div`
   position: relative;
+  top: 55px;
+  left: 90px;
+  @media (max-width: 1440px) {
+    top: 5px;
+    left: 25px;
+  }
+  @media (max-width: 800px) {
+  }
+  @media (max-width: 500px) {
+  }
 `;
 
 const Tree = styled.div`
+  background-color: black;
   position: absolute;
   top: 120px;
   left: 20px;

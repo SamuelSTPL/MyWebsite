@@ -11,7 +11,7 @@ export const Codewars = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img
+        <Img
           src="https://www.codewars.com/users/SamuelSTPL/badges/small"
           alt="codewar badge"
         />
@@ -21,12 +21,11 @@ export const Codewars = () => {
 };
 
 const Wrapper = styled.div`
-  padding: 40px 10px 10px 20px;
   position: absolute;
-  width: 400px;
-  height: 150px;
-  right: 10%;
-  top: 60%;
+  width: 25%;
+  height: 10vw;
+  right: 5%;
+  top: 58%;
   border: 3px solid ${Colors.blue};
   background-color: whitesmoke;
   border-radius: 50px;
@@ -34,14 +33,46 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
+  text-align: center;
+  min-height: 300px;
+
+  @media (max-width: 1440px) {
+    top: 55%;
+    min-height: 200px;
+  }
+  @media (max-width: 800px) {
+    top: 55%;
+    min-height: 150px;
+  }
+  @media (max-width: 500px) {
+    min-height: 150px;
+  }
 `;
 
 const Anchor = styled.a`
-  margin-top: 10px;
+  margin-top: 1vw;
 `;
 
 const Text = styled.p`
-  font-size: 2.1rem;
+  font-size: 3rem;
   color: ${Colors.blue};
+  @media (max-width: 1440px) {
+    font-size: 1.7rem;
+  }
+  @media (max-width: 800px) {
+  }
+  @media (max-width: 500px) {
+  }
+`;
+
+const Img = styled.img`
+  width: 95%;
+  height: 100%;
+  @media (max-width: 1440px) {
+  }
+  @media (max-width: 800px) {
+  }
+  @media (max-width: 500px) {
+  }
 `;
