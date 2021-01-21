@@ -41,8 +41,8 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.p`
-  margin: 35px auto 50px auto;
-  font-size: 4rem;
+  margin: 40px auto 50px auto;
+  font-size: 3.3rem;
   color: ${Colors.blue};
   @media (max-width: 1440px) {
     font-size: 2.1rem;
@@ -54,12 +54,15 @@ const Title = styled.p`
 `;
 
 const TechnologyName = styled.p`
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: ${Colors.blue};
   align-self: left;
-  margin-left: 30%;
+  margin-left: 32%;
+  margin-top: 15px;
   @media (max-width: 1440px) {
     font-size: 2rem;
+    margin-left: 30%;
+    margin-top: 0px;
   }
   @media (max-width: 800px) {
   }

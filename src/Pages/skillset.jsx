@@ -14,7 +14,6 @@ export const Skillset = () => {
   return (
     <Wrapper>
       <NavBar />
-      {/* <LinkBar /> */}
       <Logo />
       <Codewars />
       <CurrentlyLearning />
@@ -108,7 +107,7 @@ const Wrapper = styled.div`
 `;
 const SkillsWrapper = styled.div`
   width: 50%;
-  /* max-height: 60vw; */
+  max-height: 800px;
   margin-left: 12%;
   border: 3px solid ${Colors.blue};
   background-color: whitesmoke;
@@ -148,7 +147,7 @@ const SkillBars = styled.div`
     animation: ${crashingWaves} 10s linear infinite;
   }
   @media (min-width: 1300px) {
-    height: 35px;
+    height: 25px;
   }
   @media (max-height: 850px) {
     height: 18px;
@@ -164,7 +163,7 @@ const SubTitle = styled.p`
   text-align: center;
   font-weight: bolder;
   @media (min-width: 1300px) {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
   }
   @media (max-height: 850px) {
     font-size: 1.5rem;
@@ -179,7 +178,7 @@ const SkillName = styled.p`
   margin: 5px 0;
   font-weight: bold;
   @media (min-width: 1300px) {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
   @media (max-height: 850px) {
     font-size: 1.4rem;
