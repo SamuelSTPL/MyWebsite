@@ -47,6 +47,7 @@ const Overlay1 = styled.div`
   @media (max-width: 800px) {
   }
   @media (max-width: 500px) {
+    width: 300px;
   }
 `;
 
@@ -59,10 +60,12 @@ const ContentBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 500px) {
+    width: 90%;
+  }
 `;
 
 const Text = styled.p`
-  font-size: 2.2rem;
   font-size: 2.2rem;
   font-weight: bold;
   color: ${Colors.blue};
@@ -73,7 +76,7 @@ const Text = styled.p`
     font-size: 1.4rem;
   }
   @media (max-width: 500px) {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
 `;
 
@@ -102,10 +105,10 @@ const EnterButton = styled.button`
     border: 4px solid ${Colors.blue};
   }
   @media (max-width: 500px) {
-    width: 150px;
+    width: 160px;
     border: 3px solid ${Colors.blue};
-    height: 40px;
-    font-size: 1.2rem;
+    height: 45px;
+    font-size: 1.4rem;
   }
 `;
 

@@ -16,11 +16,17 @@ export const Logo = () => {
 const Wrapper = styled.button`
   z-index: 20;
   position: absolute;
-  top: 0.5%;
-  left: 4%;
+  top: 5%;
+  left: 10%;
   background: transparent;
   border: none;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
+
+  @media (max-width: 500px) {
+    top: 95%;
+    left: 50%;
+  }
+
   &:hover {
     cursor: pointer;
   }
@@ -32,4 +38,7 @@ const Wrapper = styled.button`
 
 const Img = styled.img`
   width: 14vw;
+  @media (max-width: 500px) {
+    width: 100px;
+  }
 `;

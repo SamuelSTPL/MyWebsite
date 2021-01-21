@@ -30,7 +30,6 @@ export const Homepage = () => {
 
 const Wrapper = styled.div`
   background-color: ${Colors.background};
-  /* height: 100vh; */
   padding-top: 15px;
   max-width: 100%;
 `;
@@ -40,11 +39,18 @@ const BackgroundImgContainer = styled.div`
   min-height: 100vh;
   display: flex;
   justify-content: center;
+  @media (max-width: 500px) {
+  }
 `;
 
 const BackgroundImg = styled.img`
   width: 90%;
   height: auto;
+  @media (max-width: 500px) {
+    margin-top: 40%;
+    width: 100%;
+    height: 400px;
+  }
 `;
 
 const MainContentContainer = styled.div`
@@ -55,6 +61,11 @@ const MainContentContainer = styled.div`
   left: 55%;
   transform: translate(-50%, -50%);
   display: flex;
+  @media (max-width: 500px) {
+    flex-direction: column;
+    width: 90%;
+    left: 50%;
+  }
 `;
 
 const ProfileImg = styled.img`
@@ -89,6 +100,8 @@ const TextContainer = styled.div`
   @media (max-width: 800px) {
   }
   @media (max-width: 500px) {
+    width: 90%;
+    margin-top: 20px;
   }
 `;
 
@@ -100,6 +113,10 @@ const Overlay = styled.div`
   height: 60%;
   background-color: #dfe9f3;
   opacity: 0.6;
+  @media (max-width: 500px) {
+    width: 100%;
+    height: 90%;
+  }
 `;
 
 const Title = styled.p`
@@ -115,8 +132,8 @@ const Title = styled.p`
   }
   @media (max-width: 800px) {
     font-size: 2.5rem;
-  }
+  }*/
   @media (max-width: 500px) {
-    font-size: 2rem;
-  } */
+    font-size: 1.5rem;
+  }
 `;

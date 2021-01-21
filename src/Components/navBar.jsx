@@ -34,6 +34,10 @@ const Wrapper = styled.ul`
   transform: translate(0%, -50%);
   animation: ${slideDown} 0.5s forwards;
   animation-delay: 2s;
+  @media (max-width: 500px) {
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
 `;
 
 const Li = styled.div`
@@ -45,6 +49,11 @@ const Li = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 500px) {
+    width: 65px;
+    height: 30px;
+  }
 
   &:after,
   &:before {
@@ -92,4 +101,7 @@ const Link = styled(NavLink)`
   text-decoration: none;
   color: ${Colors.blue};
   font-family: "Indie Flower", cursive;
+  @media (max-width: 500px) {
+    font-size: 0.9rem;
+  }
 `;
