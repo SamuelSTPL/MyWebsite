@@ -41,7 +41,7 @@ const Tree = styled.div`
   min-height: 40px;
   background-color: ${Colors.blue};
   transform-origin: bottom;
-  animation: ${treeGrows} 15s linear infinite;
+  animation: ${treeGrows} 7s linear infinite;
 `;
 
 const Leaf = styled.span`

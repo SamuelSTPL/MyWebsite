@@ -89,6 +89,11 @@ export const Projects = () => {
         </ProjectsContainer>
       </MainContainer>
       <LinkBar />
+      <UnderConstruction>
+        <Optimisation>
+          This page is not yet optimised for a mobile version.
+        </Optimisation>
+      </UnderConstruction>
     </Wrapper>
   );
 };
@@ -97,12 +102,21 @@ const Wrapper = styled.div`
   width: 100%;
   min-height: 100vh;
   background-color: ${Colors.background};
+  @media (max-width: 500px) {
+    padding-top: 0px;
+    max-height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
 `;
 
 const MainContainer = styled.div`
   width: 80%;
   margin: auto;
   height: 100%;
+  @media (max-width: 500px) {
+    width: 95%;
+  }
 `;
 
 const Title = styled.p`
@@ -112,6 +126,11 @@ const Title = styled.p`
   color: ${Colors.blue};
   text-shadow: 4px 3px 2px ${Colors.hoverBlue};
   font-family: "Indie Flower", cursive;
+  @media (max-width: 500px) {
+    font-size: 1.3rem;
+    text-align: center;
+    padding-top: 70px;
+  }
 `;
 
 const ProjectsContainer = styled.div`
@@ -121,6 +140,9 @@ const ProjectsContainer = styled.div`
   display: flex;
   justify-content: left;
   align-items: center;
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
 `;
 
 const Project = styled.div`
@@ -136,6 +158,10 @@ const Project = styled.div`
   border: 2px solid ${Colors.blue};
   border-radius: 30px;
   box-shadow: 5px 5px 15px 5px #a3abb3;
+  @media (max-width: 500px) {
+    width: 95%;
+    margin-top: 30px;
+  }
 `;
 
 const ProjectTitle = styled.a`
@@ -184,4 +210,28 @@ const Challenge = styled(Li)`
 const Challenge2 = styled(Li)`
   margin: 8px auto;
   width: 90%;
+`;
+
+const UnderConstruction = styled.div`
+  visibility: none;
+  @media (max-width: 500px) {
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: ${Colors.hoverBlue};
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+`;
+
+const Optimisation = styled.p`
+  visibility: hidden;
+  @media (max-width: 500px) {
+    visibility: visible;
+  }
 `;

@@ -25,7 +25,7 @@ export const NavBar = () => {
 };
 
 const Wrapper = styled.ul`
-  z-index: 20;
+  z-index: 2000;
   position: absolute;
   top: -5%;
   right: 3%;

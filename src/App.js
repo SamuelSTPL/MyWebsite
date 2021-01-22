@@ -28,6 +28,9 @@ function App() {
 const Wrapper = styled.div`
   width: 100%;
   /* max-height: 100vh; */
+  @media (max-width: 500px) {
+    min-height: 100%;
+  }
 `;
 
 export default App;
