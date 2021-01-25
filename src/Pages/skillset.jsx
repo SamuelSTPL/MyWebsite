@@ -37,7 +37,7 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   @media (min-width: 1300px) {
-    padding-top: 170px;
+    padding-top: 100px;
   }
   @media (max-height: 850px) {
     padding-top: 100px;

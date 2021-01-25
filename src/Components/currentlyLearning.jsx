@@ -16,8 +16,8 @@ export const CurrentlyLearning = () => {
 
 const Wrapper = styled.div`
   border: 2px solid ${Colors.blue};
-  width: 500px;
-  height: 300px;
+  width: 450px;
+  height: 230px;
   background-color: whitesmoke;
   border-radius: 50px;
   box-shadow: 5px 5px 15px 5px #a3abb3;
@@ -41,7 +41,7 @@ const Wrapper = styled.div`
 
 const Title = styled.p`
   margin: 40px auto 50px auto;
-  font-size: 3.3rem;
+  font-size: 2.7rem;
   color: ${Colors.blue};
 
   @media (max-width: 1440px) {
@@ -58,11 +58,11 @@ const Title = styled.p`
 `;
 
 const TechnologyName = styled.p`
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: ${Colors.blue};
   align-self: left;
-  margin-left: 32%;
-  margin-top: 15px;
+  margin-left: 35%;
+  margin-top: 20px;
   @media (max-width: 1440px) {
     font-size: 2rem;
     margin-left: 30%;

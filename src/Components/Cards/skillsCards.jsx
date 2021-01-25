@@ -31,7 +31,7 @@ const Card = styled.div`
 
 const Title = styled.h1`
   color: ${Colors.blue};
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 15px 0 7px 0;
   text-align: center;
   font-weight: bolder;

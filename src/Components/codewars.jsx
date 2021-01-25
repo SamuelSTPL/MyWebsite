@@ -21,8 +21,8 @@ export const Codewars = () => {
 };
 
 const Wrapper = styled.div`
-  width: 500px;
-  height: 300px;
+  width: 450px;
+  height: 230px;
   border: 2px solid ${Colors.blue};
   background-color: whitesmoke;
   border-radius: 50px;
@@ -58,7 +58,7 @@ const Anchor = styled.a`
 `;
 
 const Text = styled.p`
-  font-size: 3rem;
+  font-size: 2.6rem;
   color: ${Colors.blue};
   @media (max-width: 1440px) {
     font-size: 1.7rem;
