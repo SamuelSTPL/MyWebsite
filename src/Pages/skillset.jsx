@@ -5,89 +5,21 @@ import { Colors } from "../Global/Color";
 import { Logo } from "../Components/logo";
 import { NavBar } from "../Components/navBar";
 import { CurrentlyLearning } from "../Components/currentlyLearning";
-import waves from "../images/waves.png";
-import sand from "../images/sand.jpg";
-import { crashingWaves } from "../Global/keyframesAnimation";
 import { Codewars } from "../Components/codewars";
+import { SkillsDeckOfCards } from "../Components/Cards/skillsDeckOfCards";
 
 export const Skillset = () => {
   return (
     <Wrapper>
       <NavBar />
       <Logo />
-      <Codewars />
-      <CurrentlyLearning />
-      <SkillsWrapper>
-        <SubTitle>Front-End</SubTitle>
-        <SkillsContainer>
-          <SkillName>Styling / Desing</SkillName>
-          <SkillBarBackground>
-            <SkillBars width={"80%"}></SkillBars>
-          </SkillBarBackground>
-        </SkillsContainer>
-        <SkillsContainer>
-          <SkillName>HTML / CSS (Animations & Responsive Design)</SkillName>
-          <SkillBarBackground>
-            <SkillBars width={"84%"}></SkillBars>
-          </SkillBarBackground>
-        </SkillsContainer>
-        <SkillsContainer>
-          <SkillName>JavaScript (ES6 & Vanilla)</SkillName>
-          <SkillBarBackground>
-            <SkillBars width={"80%"}></SkillBars>
-          </SkillBarBackground>
-        </SkillsContainer>
-        <SkillsContainer>
-          <SkillName>React (Hooks & Context)</SkillName>
-          <SkillBarBackground>
-            <SkillBars width={"75%"}></SkillBars>
-          </SkillBarBackground>
-        </SkillsContainer>
-        <SkillsContainer>
-          <SkillName>Redux</SkillName>
-          <SkillBarBackground>
-            <SkillBars width={"55%"}></SkillBars>
-          </SkillBarBackground>
-        </SkillsContainer>
-        <SkillsContainer>
-          <SkillName>Styled-Components</SkillName>
-          <SkillBarBackground>
-            <SkillBars width={"75%"}></SkillBars>
-          </SkillBarBackground>
-        </SkillsContainer>
-        <SubTitle>Back-End</SubTitle>
-        <SkillsContainer>
-          <SkillName>Node</SkillName>
-          <SkillBarBackground>
-            <SkillBars width={"63%"}></SkillBars>
-          </SkillBarBackground>
-        </SkillsContainer>
-        <SkillsContainer>
-          <SkillName>Express</SkillName>
-          <SkillBarBackground>
-            <SkillBars width={"65%"}></SkillBars>
-          </SkillBarBackground>
-        </SkillsContainer>
-        <SkillsContainer>
-          <SkillName>Python</SkillName>
-          <SkillBarBackground>
-            <SkillBars width={"25%"}></SkillBars>
-          </SkillBarBackground>
-        </SkillsContainer>
-        <SubTitle>Databases</SubTitle>
-        <SkillsContainer>
-          <SkillName>Firebase (Firestore & Auth)</SkillName>
-          <SkillBarBackground>
-            <SkillBars width={"55%"}></SkillBars>
-          </SkillBarBackground>
-        </SkillsContainer>
-        <SkillsContainer>
-          <SkillName>MongoDB</SkillName>
-          <SkillBarBackground>
-            <SkillBars width={"20%"}></SkillBars>
-          </SkillBarBackground>
-        </SkillsContainer>
-      </SkillsWrapper>
+      <SkillsContainer>
+        <SkillsDeckOfCards />
+      </SkillsContainer>
+      <LearningAndCodeWarContainer>
+        <Codewars />
+        <CurrentlyLearning />
+      </LearningAndCodeWarContainer>
       <UnderConstruction>
         <Optimisation>
           This page is not yet optimised for a mobile version.
@@ -101,108 +33,41 @@ const Wrapper = styled.div`
   width: 100%;
   height: 100vh;
   background-color: ${Colors.background};
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @media (min-width: 1300px) {
-    padding-top: 150px;
+    padding-top: 170px;
   }
   @media (max-height: 850px) {
     padding-top: 100px;
   }
   @media (max-width: 500px) {
-    padding-top: 70px;
-    min-height: 100vh;
+    padding-top: 140px;
+    flex-direction: column;
   }
 `;
-const SkillsWrapper = styled.div`
-  width: 50%;
-  max-height: 800px;
-  margin-left: 12%;
-  border: 3px solid ${Colors.blue};
-  background-color: whitesmoke;
-  border-radius: 50px;
-  box-shadow: 5px 5px 15px 5px #a3abb3;
-  padding: 0 20px 30px 20px;
-  @media (min-width: 1300px) {
-  }
-  @media (max-heigth: 850px) {
-    height: 700px;
-  }
-  @media (max-width: 500px) {
-    width: 95%;
-    margin-left: 0;
-    margin: auto;
-  }
-`;
-
 const SkillsContainer = styled.div`
   width: 100%;
-  max-height: 100%;
-  margin: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
-
-const SkillBarBackground = styled.div`
-  background-image: url(${sand});
-  background-size: cover;
+const LearningAndCodeWarContainer = styled.div`
   width: 100%;
-  border-radius: 0 20px 20px 0;
-`;
-
-const SkillBars = styled.div`
-  width: ${(props) => props.width};
-  height: 1vw;
-  background-image: url(${waves});
-  background-size: cover;
-  border-radius: 0 20px 20px 0;
-
-  &:hover {
-    animation: ${crashingWaves} 10s linear infinite;
-  }
-  @media (min-width: 1300px) {
-    height: 25px;
-  }
-  @media (max-height: 850px) {
-    height: 18px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   @media (max-width: 500px) {
-    height: 15px;
-  }
-`;
-
-const SubTitle = styled.p`
-  color: ${Colors.blue};
-  font-size: 1.7rem;
-  margin: 10px 0 -10px 0;
-  text-align: center;
-  font-weight: bolder;
-  @media (min-width: 1300px) {
-    font-size: 2.1rem;
-  }
-  @media (max-height: 850px) {
-    font-size: 1.5rem;
-  }
-  @media (max-width: 500px) {
-    font-size: 1.4rem;
-    margin: 10px 0 -10px 0;
-  }
-`;
-
-const SkillName = styled.p`
-  color: ${Colors.blue};
-  font-size: 1.4rem;
-  margin: 5px 0;
-  font-weight: bold;
-  @media (min-width: 1300px) {
-    font-size: 1.4rem;
-  }
-  @media (max-height: 850px) {
-    font-size: 1.4rem;
-  }
-  @media (max-width: 500px) {
-    font-size: 1rem;
+    padding-top: 40px;
+    flex-direction: row;
+    align-items: top;
   }
 `;
 
 const UnderConstruction = styled.div`
-  visibility: none;
+  display: none;
   @media (max-width: 500px) {
     visibility: visible;
     width: 100%;

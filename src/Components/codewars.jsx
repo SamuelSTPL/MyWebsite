@@ -21,12 +21,9 @@ export const Codewars = () => {
 };
 
 const Wrapper = styled.div`
-  position: absolute;
-  width: 25%;
-  height: 10vw;
-  right: 5%;
-  top: 58%;
-  border: 3px solid ${Colors.blue};
+  width: 500px;
+  height: 300px;
+  border: 2px solid ${Colors.blue};
   background-color: whitesmoke;
   border-radius: 50px;
   box-shadow: 5px 5px 15px 5px #a3abb3;
@@ -35,21 +32,20 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-height: 300px;
 
   @media (max-width: 1440px) {
-    top: 55%;
-    min-height: 200px;
+    width: 350px;
+    height: 200px;
   }
   @media (max-width: 800px) {
-    top: 55%;
-    min-height: 150px;
+    width: 250px;
+    height: 180px;
   }
   @media (max-width: 500px) {
     width: 170px;
     height: 60px;
-    right: 7%;
-    top: 80%;
+    /* right: 7%; */
+    /* top: 80%; */
     min-height: 100px;
   }
 `;

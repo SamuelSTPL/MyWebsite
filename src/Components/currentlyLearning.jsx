@@ -15,32 +15,27 @@ export const CurrentlyLearning = () => {
 };
 
 const Wrapper = styled.div`
-  border: 3px solid ${Colors.blue};
-  position: absolute;
-  width: 25%;
-  right: 5%;
-  top: 20%;
+  border: 2px solid ${Colors.blue};
+  width: 500px;
+  height: 300px;
   background-color: whitesmoke;
   border-radius: 50px;
   box-shadow: 5px 5px 15px 5px #a3abb3;
   display: flex;
   flex-direction: column;
-  min-height: 300px;
+  margin-top: 10%;
 
   @media (max-width: 1440px) {
-    top: 18%;
-    min-height: 200px;
+    width: 350px;
+    height: 200px;
   }
   @media (max-width: 800px) {
-    top: 25%;
-    min-height: 150px;
+    width: 250px;
+    height: 180px;
   }
   @media (max-width: 500px) {
     width: 170px;
     height: 60px;
-    right: 50%;
-    top: 80%;
-    min-height: 100px;
   }
 `;
 
@@ -48,10 +43,12 @@ const Title = styled.p`
   margin: 40px auto 50px auto;
   font-size: 3.3rem;
   color: ${Colors.blue};
+
   @media (max-width: 1440px) {
     font-size: 2.1rem;
   }
   @media (max-width: 800px) {
+    font-size: 1.8rem;
   }
   @media (max-width: 500px) {
     margin: 25px 0 0 10px;
@@ -72,6 +69,8 @@ const TechnologyName = styled.p`
     margin-top: 1.5px;
   }
   @media (max-width: 800px) {
+    margin-left: 35%;
+    font-size: 1.8rem;
   }
   @media (max-width: 500px) {
     font-size: 1rem;
