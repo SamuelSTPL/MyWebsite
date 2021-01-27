@@ -21,3 +21,14 @@ export const ListOfSkillsTools = [
   { name: "Styled-Components", score: "80%" },
   { name: "Git/GitHub", score: "85%" },
 ];
+
+export const cardItems = [
+  {title: "Front-End",
+  area: ListOfSkillsFE}, 
+  {title: "Back-End",
+  area: ListOfSkillsBE}, 
+  {title: "Databases",
+  area: ListOfSkillsDB}, 
+  {title: "Tools",
+  area: ListOfSkillsTools}
+];
