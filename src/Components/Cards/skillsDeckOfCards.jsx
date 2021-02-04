@@ -1,6 +1,6 @@
 import React, {useRef} from "react";
 import styled from "styled-components";
-import Carousel, {consts} from 'react-elastic-carousel'
+import Carousel from 'react-elastic-carousel'
 
 import './cards-styles.css'; 
 import { SkillsCards } from "./skillsCards";
