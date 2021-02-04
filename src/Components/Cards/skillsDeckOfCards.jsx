@@ -1,35 +1,60 @@
-import React from "react";
+import React, {useRef} from "react";
 import styled from "styled-components";
+import Carousel, {consts} from 'react-elastic-carousel'
 
-import { Colors } from "../../Global/Color";
+import './cards-styles.css'; 
 import { SkillsCards } from "./skillsCards";
-import {
-  ListOfSkillsFE,
-  ListOfSkillsBE,
-  ListOfSkillsDB,
-  ListOfSkillsTools,
-} from "../../Data/skills";
+import {cardItems} from "../../Data/skills";
 
 export const SkillsDeckOfCards = () => {
+  const carouselRef = useRef(null);
+  let resetTimeout;
+
+  let myArrow = ({type, onClick, isEdge}) => {
+    const pointer = type === consts.PREV ? '<' : '>';
+    return(
+      <button onClick={onClick} disabled={isEdge}>{pointer}</button>
+    )
+  }
+
   return (
     <Wrapper>
-      <SkillsCards areaOfSkills={ListOfSkillsFE} title={"Front End"} />
-      <SkillsCards areaOfSkills={ListOfSkillsBE} title={"Back End"} />
-      <SkillsCards areaOfSkills={ListOfSkillsDB} title={"Databases"} />
-      <SkillsCards areaOfSkills={ListOfSkillsTools} title={"Tools"} />
+      <Carousel itemsToShow={1} enableAutoPlay={true} autoPlaySpeed={6000}
+      ref={carouselRef} 
+      onNextEnd={({ index }) => {
+        clearTimeout(resetTimeout)
+        if (index + 1 === 4) {
+            resetTimeout = setTimeout(() => {
+              carouselRef.current.goTo(0)
+           }, 4000)}}} //
+      >
+    {cardItems.map((card) => {
+      return(<SkillsCards key={card.title} areaOfSkills={card.area} title={card.title}/>)
+    })}
+      </Carousel>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.div`
-  width: 80%;
-  padding: 15px;
-  background-color: whitesmoke;
-  border: 2px solid ${Colors.blue};
-  border-radius: 10px;
-  box-shadow: 5px 5px 15px 5px #a3abb3;
-
-  @media (max-width: 500px) {
-    max-height: 500px;
+  width: 700px;
+  height: 800px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  background: none;
+  @media (max-width: 1440px) {
+    width: 600px;
+    height: 500px;
   }
-`;
+  @media (max-width: 770px) {
+    width: 450px;
+    height: 500px;
+  } 
+  @media (max-width: 500px) {
+    width: 450px;
+    height: 500px;
+    margin-top: -70px;
+  }
+  `
+

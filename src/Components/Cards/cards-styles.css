@@ -1,0 +1,36 @@
+.rec.rec-arrow {
+  border-radius: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: #395485;
+}
+.rec.rec-arrow:disabled {
+  visibility: hidden;
+}
+.rec.rec-arrow:hover,
+.rec.rec-arrow:active,
+.rec.rec-arrow:focus {
+  outline: none;
+  background: none;
+  color: #395485;
+  border: none;
+  box-shadow: none;
+}
+.rec.rec-arrow:hover {
+  transform: scale(1.5);
+}
+.rec-carousel-item:focus {
+  color: #395485;
+  outline: none;
+  background-color: none;
+}
+button.rec-dot {
+  visibility: hidden;
+}
+
+@media (max-width: 500px) {
+  .rec.rec-arrow {
+    font-size: 0.9rem;
+  }
+}

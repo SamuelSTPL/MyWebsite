@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 import { Colors } from "../../Global/Color";
 
-export const SkillsCards = ({ areaOfSkills, title }) => {
-  areaOfSkills.map((skill) => console.log(skill.score));
+
+export const SkillsCards = ({ areaOfSkills, title, }) => {
   return (
     <Card>
       <Title>{title}</Title>
@@ -26,13 +26,32 @@ export const SkillsCards = ({ areaOfSkills, title }) => {
 };
 
 const Card = styled.div`
-  width: 100%;
+  width: 90%;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  border: 2px solid ${Colors.blue};
+  box-shadow: 3px 3px 10px 5px #a3abb3;
+  padding: 40px;
+  margin: 20px auto;
+  height: 600px;
+  
+  @media (max-width: 1440px) {
+  height: 650px;
+  }
+  @media (max-width: 770px) {
+    height: 550px;
+  }
+  @media (max-width: 500px) {
+  padding: 20px;
+  margin: 60px auto 15px auto;
+  height: 350px;
+  }
 `;
 
 const Title = styled.h1`
   color: ${Colors.blue};
-  font-size: 1.5rem;
-  margin: 15px 0 7px 0;
+  font-size: 2.5rem;
+  margin: 20px 0;
   text-align: center;
   font-weight: bolder;
 
@@ -55,8 +74,8 @@ const List = styled.ul``;
 
 const SkillName = styled.p`
   color: ${Colors.blue};
-  font-size: 1.1rem;
-  margin: 5px 0;
+  font-size: 1.5rem;
+  margin: 20px 0 7px 0;
   font-weight: bold;
   @media (max-width: 1440px) {
     font-size: 0.9rem;

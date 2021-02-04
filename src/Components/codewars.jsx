@@ -43,10 +43,7 @@ const Wrapper = styled.div`
   }
   @media (max-width: 500px) {
     width: 170px;
-    height: 60px;
-    /* right: 7%; */
-    /* top: 80%; */
-    min-height: 100px;
+    height: 100px;
   }
 `;
 
