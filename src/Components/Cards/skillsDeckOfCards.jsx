@@ -10,13 +10,6 @@ export const SkillsDeckOfCards = () => {
   const carouselRef = useRef(null);
   let resetTimeout;
 
-  let myArrow = ({type, onClick, isEdge}) => {
-    const pointer = type === consts.PREV ? '<' : '>';
-    return(
-      <button onClick={onClick} disabled={isEdge}>{pointer}</button>
-    )
-  }
-
   return (
     <Wrapper>
       <Carousel itemsToShow={1} enableAutoPlay={true} autoPlaySpeed={6000}
