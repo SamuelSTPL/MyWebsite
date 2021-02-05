@@ -16,6 +16,7 @@ export const ListOfSkillsBE = [
 export const ListOfSkillsDB = [
   { name: "Firebase (Firestore & Auth)", score: "60%" },
   { name: "MongoDB", score: "60%" },
+  { name: "SQLite", score: "30%" },
 ];
 
 export const ListOfSkillsTools = [
@@ -23,6 +24,7 @@ export const ListOfSkillsTools = [
   { name: "Git/GitHub", score: "85%" },
   { name: "Netlify", score: "60%" },
   { name: "Heroku", score: "60%" },
+  { name: "Linux", score: "65%" },
 ];
 
 export const cardItems = [
