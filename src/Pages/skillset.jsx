@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import { Colors } from "../Global/Color";
 import { Logo } from "../Components/logo";
 import { LinkBar } from "../Components/linkBar";
 import { NavBar } from "../Components/navBar";

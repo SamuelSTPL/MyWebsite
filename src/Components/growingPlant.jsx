@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 import { treeGrows } from "../Global/keyframesAnimation";
-import { Colors } from "../Global/Color";
 
 export const GrowingPlant = () => {
   return (
