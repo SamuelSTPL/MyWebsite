@@ -29,7 +29,12 @@ export const Skillset = () => {
 const Wrapper = styled.div`
   width: 100%;
   height: 100vh;
-  background-color: ${Colors.background};
+  background: linear-gradient(
+    326deg,
+    rgba(223, 233, 243, 1) 0%,
+    rgba(139, 160, 199, 1) 41%,
+    rgba(223, 233, 243, 1) 100%
+  );
   display: flex;
   justify-content: center;
   align-items: center;

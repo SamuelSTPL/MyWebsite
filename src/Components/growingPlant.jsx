@@ -39,7 +39,7 @@ const Tree = styled.div`
   left: 20px;
   min-width: 4px;
   min-height: 40px;
-  background-color: ${Colors.blue};
+  background-color: #289667;
   transform-origin: bottom;
   animation: ${treeGrows} 7s linear infinite;
 `;
@@ -48,7 +48,7 @@ const Leaf = styled.span`
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: ${Colors.blue};
+  background-color: #289667;
   border: 0;
   border-top-right-radius: 100%;
   border-bottom-left-radius: 100%;

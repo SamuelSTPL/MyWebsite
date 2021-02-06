@@ -10,10 +10,10 @@ export const ProjectDeckOfCards = () => {
   return (
     <Wrapper>
       <Carousel itemsToShow={1}>
-        {listOfProjects.map((card) => {
+        {listOfProjects.map((card, index) => {
           return (
             <ProjectCards
-              key={card.title}
+              key={index}
               image={card.image}
               name={card.name}
               size={card.size}
