@@ -1,14 +1,16 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import styled from "styled-components";
+import { FaLaptopCode } from "react-icons/fa";
 
-import logo from "../images/logo.png";
+import { Colors } from "../Global/Color";
 
 export const Logo = () => {
   const history = useHistory();
   return (
     <Wrapper onClick={() => history.push("/")}>
-      <Img src={logo} alt="SamSTPL Logo" />
+      <FaLaptopCode />
+      <Name>SamSTPL</Name>
     </Wrapper>
   );
 };
@@ -21,9 +23,19 @@ const Wrapper = styled.button`
   background: transparent;
   border: none;
   transform: translate(-50%, -50%);
-
+  display: flex;
+  align-items: center;
+  color: ${Colors.blue};
+  font-size: 2.2rem;
+  @media (max-width: 1024px) {
+    font-size: 1.5rem;
+  }
+  @media (max-width: 770px) {
+    font-size: 1.3rem;
+  }
   @media (max-width: 500px) {
     top: 95%;
+    font-size: 1.2rem;
     left: 50%;
   }
 
@@ -36,9 +48,10 @@ const Wrapper = styled.button`
   }
 `;
 
-const Img = styled.img`
-  width: 14vw;
-  @media (max-width: 500px) {
-    width: 100px;
-  }
+const Name = styled.p`
+  margin-left: 10px;
+  letter-spacing: 0.15em;
+  background: -webkit-linear-gradient(${Colors.hoverBlue}, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `;
