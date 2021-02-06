@@ -21,11 +21,6 @@ export const Projects = () => {
         <Globe />
       </MainContainer>
       <LinkBar />
-      {/* <UnderConstruction>
-        <Optimisation>
-          This page is not yet optimised for a mobile version.
-        </Optimisation>
-      </UnderConstruction> */}
     </Wrapper>
   );
 };
@@ -45,7 +40,6 @@ const MainContainer = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* border: solid 1px green; */
   @media (max-width: 1440px) {
     height: 750px;
     margin: 0px auto;
@@ -102,27 +96,3 @@ const ProjectsContainer = styled.div`
   @media (max-width: 500px) {
   }
 `;
-
-// const UnderConstruction = styled.div`
-//   visibility: none;
-//   @media (max-width: 500px) {
-//     visibility: visible;
-//     width: 100%;
-//     height: 100%;
-//     z-index: 1000;
-//     background-color: ${Colors.hoverBlue};
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//   }
-// `;
-
-// const Optimisation = styled.p`
-//   visibility: hidden;
-//   @media (max-width: 500px) {
-//     visibility: visible;
-//   }
-// `;
