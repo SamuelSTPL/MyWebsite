@@ -32,6 +32,7 @@ const Wrapper = styled.button`
   }
   @media (max-width: 770px) {
     font-size: 1.3rem;
+    left: 15%;
   }
   @media (max-width: 500px) {
     top: 95%;

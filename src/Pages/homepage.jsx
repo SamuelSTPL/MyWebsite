@@ -46,6 +46,16 @@ const BackgroundImgContainer = styled.div`
 const BackgroundImg = styled.img`
   width: 90%;
   height: auto;
+  @media (max-width: 1024px) {
+    width: 100%;
+    height: 90vh;
+    margin-top: 30px;
+  }
+  @media (max-width: 770px) {
+    width: 100%;
+    height: 70vh;
+    margin-top: 100px;
+  }
   @media (max-width: 500px) {
     margin-top: 40%;
     width: 100%;
