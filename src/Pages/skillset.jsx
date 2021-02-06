@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import { Colors } from "../Global/Color";
 import { Logo } from "../Components/logo";
+import { LinkBar } from "../Components/linkBar";
 import { NavBar } from "../Components/navBar";
 import { CurrentlyLearning } from "../Components/currentlyLearning";
 import { Codewars } from "../Components/codewars";
@@ -13,6 +14,7 @@ export const Skillset = () => {
     <Wrapper>
       <NavBar />
       <Logo />
+      <LinkBar />
       <SkillsContainer>
         <SkillsDeckOfCards />
       </SkillsContainer>
@@ -58,6 +60,5 @@ const LearningAndCodeWarContainer = styled.div`
     margin-top: -20px;
     flex-direction: row;
     align-items: center;
-
   }
 `;
