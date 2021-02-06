@@ -28,7 +28,12 @@ const Wrapper = styled.div`
   padding-top: 80px;
   width: 100%;
   min-height: 100vh;
-  background-color: ${Colors.background};
+  background: linear-gradient(
+    326deg,
+    rgba(139, 160, 199, 1) 0%,
+    rgba(223, 233, 243, 1) 41%,
+    rgba(139, 160, 199, 1) 100%
+  );
   @media (max-width: 500px) {
   }
 `;
