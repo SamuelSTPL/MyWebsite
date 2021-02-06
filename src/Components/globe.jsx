@@ -15,12 +15,13 @@ export const Globe = () => {
 };
 
 const Wrapper = styled.div`
-  position: absolute;
-  top: 20%;
-  right: 10%;
+  position: relative;
   background-color: ${Colors.blue};
   border-radius: 50%;
   box-shadow: 4px 4px 5px 0px #757575;
+  @media (max-width: 500px) {
+    display: none;
+  }
 `;
 
 const Earth = styled.div`
@@ -35,7 +36,7 @@ const Earth = styled.div`
 
 const Citation = styled.p`
   position: absolute;
-  top: 105%;
+  top: 107%;
   font-size: 2.2vw;
   font-weight: bold;
   color: ${Colors.blue};
