@@ -44,7 +44,7 @@ const Wrapper = styled.div`
     padding-top: 100px;
   }
   @media (max-width: 500px) {
-    padding-top: 0px;
+    padding-top: 40px;
     flex-direction: column;
   }
 `;
@@ -61,8 +61,9 @@ const LearningAndCodeWarContainer = styled.div`
   justify-content: center;
   align-items: center;
   @media (max-width: 500px) {
-    margin-top: -20px;
+    /* margin-top: -20px;
     flex-direction: row;
-    align-items: center;
+    align-items: center; */
+    visibility: hidden;
   }
 `;
