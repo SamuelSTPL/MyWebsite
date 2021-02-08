@@ -92,6 +92,7 @@ const EnterButton = styled.button`
   &:hover {
     cursor: pointer;
     background: ${Colors.hoverBlue};
+    color: whitesmoke;
   }
   &:focus {
     outline: none;

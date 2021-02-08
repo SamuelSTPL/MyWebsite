@@ -83,7 +83,9 @@ const ResumePDF = styled.a`
   box-shadow: 5px 5px 15px 2px #70767c;
 
   &:hover {
-    background-color: ${Colors.hoverBlue};
+    background-color: ${Colors.blue};
+    color: whitesmoke;
+    border: 3px solid whitesmoke;
   }
   @media (min-width: 1300px) {
     width: 18vw;
