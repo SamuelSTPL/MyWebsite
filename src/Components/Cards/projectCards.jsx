@@ -97,6 +97,9 @@ const Card = styled.div`
     width: 300px;
     height: 450px;
   }
+  @media (max-width: 375px) {
+    width: 95%;
+  }
 `;
 
 const ProjectTitle = styled.a`

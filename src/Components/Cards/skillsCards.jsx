@@ -3,8 +3,7 @@ import styled from "styled-components";
 
 import { Colors } from "../../Global/Color";
 
-
-export const SkillsCards = ({ areaOfSkills, title, }) => {
+export const SkillsCards = ({ areaOfSkills, title }) => {
   return (
     <Card>
       <Title>{title}</Title>
@@ -34,17 +33,17 @@ const Card = styled.div`
   padding: 40px;
   margin: 20px auto;
   height: 600px;
-  
+
   @media (max-width: 1440px) {
-  height: 650px;
+    height: 650px;
   }
   @media (max-width: 770px) {
     height: 550px;
   }
   @media (max-width: 500px) {
-  padding: 20px;
-  margin: 60px auto 15px auto;
-  height: 350px;
+    padding: 20px;
+    margin: 60px auto 15px auto;
+    height: 350px;
   }
 `;
 

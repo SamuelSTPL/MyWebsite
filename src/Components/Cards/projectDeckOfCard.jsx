@@ -52,4 +52,9 @@ const Wrapper = styled.div`
     height: 500px;
     margin-top: -70px;
   }
+  @media (max-width: 375px) {
+    width: 100%;
+    height: 500px;
+    margin-top: -70px;
+  }
 `;
