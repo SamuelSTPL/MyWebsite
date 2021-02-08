@@ -6,7 +6,8 @@ export const listOfProjects = [
     name: "Ez Cooking",
     image: ezCooking,
     size: "Large",
-    link: "ez-cooking.netlify.app",
+    tooltip: "More than three weeks",
+    link: "https://ez-cooking.netlify.app",
     description: "An easy to use recipe-finder with many filters available",
     technologies: [
       "React",
@@ -28,6 +29,7 @@ export const listOfProjects = [
     name: "Portfolio",
     image: portfolio,
     size: "Medium",
+    tooltip: "1 - 2 weeks",
     link: "https://samuelstpl.netlify.app/",
     description: "My personal web page",
     technologies: ["React", "Css Keyframes", "Styled-components"],
