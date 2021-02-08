@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Carousel from "react-elastic-carousel";
+// import ReactCardFlip from 'react-card-flip';
 
 import "./cards-styles.css";
 import { ProjectCards } from "./projectCards";
@@ -17,6 +18,7 @@ export const ProjectDeckOfCards = () => {
               image={card.image}
               name={card.name}
               size={card.size}
+              tooltip={card.tooltip}
               link={card.link}
               description={card.description}
               technologies={card.technologies}
@@ -42,11 +44,11 @@ const Wrapper = styled.div`
     height: 600px;
   }
   @media (max-width: 770px) {
-    width: 450px;
+    width: 500px;
     height: 500px;
   }
   @media (max-width: 500px) {
-    width: 400px;
+    width: 500px;
     height: 500px;
     margin-top: -70px;
   }

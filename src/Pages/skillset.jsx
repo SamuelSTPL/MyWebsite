@@ -61,9 +61,6 @@ const LearningAndCodeWarContainer = styled.div`
   justify-content: center;
   align-items: center;
   @media (max-width: 500px) {
-    /* margin-top: -20px;
-    flex-direction: row;
-    align-items: center; */
     visibility: hidden;
   }
 `;
