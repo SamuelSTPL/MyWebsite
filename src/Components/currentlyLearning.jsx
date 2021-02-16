@@ -9,7 +9,7 @@ export const CurrentlyLearning = () => {
     <Wrapper>
       <GrowingPlant />
       <Title>Currently Learning: </Title>
-      <TechnologyName>TypeScript</TechnologyName>
+      <TechnologyName>Vue.js</TechnologyName>
     </Wrapper>
   );
 };
@@ -36,8 +36,8 @@ const Wrapper = styled.div`
   @media (max-width: 500px) {
     width: 170px;
     height: 100px;
-  margin-top: 0%;
-  margin-left: 10px;
+    margin-top: 0%;
+    margin-left: 10px;
   }
 `;
 
