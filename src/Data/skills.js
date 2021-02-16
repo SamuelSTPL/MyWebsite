@@ -3,6 +3,7 @@ export const ListOfSkillsFE = [
   { name: "JavaScript (ES6 & Vanilla)", score: "84%" },
   { name: "React (Hooks & Context)", score: "75%" },
   { name: "Redux", score: "60%" },
+  { name: "Typescript", score: "60%" },
   { name: "Styling/ Design", score: "70%" },
 ];
 
@@ -28,12 +29,8 @@ export const ListOfSkillsTools = [
 ];
 
 export const cardItems = [
-  {title: "Front-End",
-  area: ListOfSkillsFE}, 
-  {title: "Back-End",
-  area: ListOfSkillsBE}, 
-  {title: "Databases",
-  area: ListOfSkillsDB}, 
-  {title: "Tools",
-  area: ListOfSkillsTools}
+  { title: "Front-End", area: ListOfSkillsFE },
+  { title: "Back-End", area: ListOfSkillsBE },
+  { title: "Databases", area: ListOfSkillsDB },
+  { title: "Tools", area: ListOfSkillsTools },
 ];
