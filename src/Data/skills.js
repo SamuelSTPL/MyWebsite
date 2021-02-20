@@ -4,20 +4,20 @@ export const ListOfSkillsFE = [
   { name: "React (Hooks & Context)", score: "75%" },
   { name: "Redux", score: "60%" },
   { name: "Typescript", score: "60%" },
-  { name: "Styling/ Design", score: "70%" },
+  { name: "Vue", score: "50%" }
 ];
 
 export const ListOfSkillsBE = [
   { name: "Node ", score: "70%" },
   { name: "Express", score: "73%" },
   { name: "EJS", score: "65%" },
-  { name: "Python", score: "40%" },
+  { name: "Python", score: "40%" }
 ];
 
 export const ListOfSkillsDB = [
   { name: "Firebase (Firestore & Auth)", score: "60%" },
   { name: "MongoDB", score: "60%" },
-  { name: "SQLite", score: "30%" },
+  { name: "SQL", score: "30%" }
 ];
 
 export const ListOfSkillsTools = [
@@ -25,12 +25,12 @@ export const ListOfSkillsTools = [
   { name: "Git/GitHub", score: "85%" },
   { name: "Netlify", score: "60%" },
   { name: "Heroku", score: "60%" },
-  { name: "Linux", score: "65%" },
+  { name: "Linux", score: "65%" }
 ];
 
 export const cardItems = [
   { title: "Front-End", area: ListOfSkillsFE },
   { title: "Back-End", area: ListOfSkillsBE },
   { title: "Databases", area: ListOfSkillsDB },
-  { title: "Tools", area: ListOfSkillsTools },
+  { title: "Tools", area: ListOfSkillsTools }
 ];
