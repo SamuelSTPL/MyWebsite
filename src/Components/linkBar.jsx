@@ -44,7 +44,6 @@ const Wrapper = styled.div`
 const ImgGit = styled.img`
   width: 2vw;
   transition: transform 0.8s ease-in-out;
-
   @media (max-width: 500px) {
     width: 25px;
   }

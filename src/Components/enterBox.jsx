@@ -42,8 +42,10 @@ const Overlay1 = styled.div`
   top: 50%;
   transform: translate(-50%, -50%);
   background-color: whitesmoke;
-  opacity: 0.6;
-
+  opacity: 0.75;
+  box-shadow: 0px 10px 13px -7px #585858,
+    5px 5px 15px 5px rgba(137, 137, 137, 0);
+  border: 3px solid ${Colors.blue};
   @media (max-width: 800px) {
   }
   @media (max-width: 500px) {
@@ -89,6 +91,8 @@ const EnterButton = styled.button`
   width: 220px;
   height: 60px;
   border: 5px solid ${Colors.blue};
+  box-shadow: 0px 10px 13px -7px #585858,
+    5px 5px 15px 5px rgba(137, 137, 137, 0);
   &:hover {
     cursor: pointer;
     background: ${Colors.hoverBlue};

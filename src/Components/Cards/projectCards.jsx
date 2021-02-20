@@ -15,7 +15,7 @@ export const ProjectCards = ({
   description,
   technologies,
   challenges,
-  deployed,
+  deployed
 }) => {
   //Show either front or back.
   const [isFlipped, setIsFlipped] = useState(false);
@@ -109,6 +109,9 @@ const ProjectTitle = styled.a`
   @media (max-width: 1024px) {
     font-size: 2rem;
   }
+  @media (max-width: 770px) {
+    font-size: 1.5rem;
+  }
   @media (max-width: 500px) {
     font-size: 1.2rem;
   }
@@ -166,6 +169,8 @@ const FlipButton = styled.button`
   align-items: center;
   width: 200px;
   height: 40px;
+  box-shadow: 0px 10px 13px -7px #585858,
+    5px 5px 15px 5px rgba(137, 137, 137, 0);
   &:hover {
     cursor: pointer;
     background: ${Colors.hoverBlue};
